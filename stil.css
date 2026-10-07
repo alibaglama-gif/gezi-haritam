@@ -1,4 +1,4 @@
-/* Gezi Haritam: gizlilik ve hesap silme sayfaları. "Kartpostal" tasarım dili;
+/* Gezdikçe: gizlilik ve hesap silme sayfaları. "Kartpostal" tasarım dili;
    yazı tipleri yerel (fonts/, OFL), dışarıdan hiçbir şey yüklenmez. */
 @font-face { font-family: "Instrument Sans"; src: url("fonts/InstrumentSans-Variable.ttf"); font-weight: 400 700; }
 @font-face { font-family: "Instrument Serif"; src: url("fonts/InstrumentSerif-Regular.ttf"); }
@@ -26,6 +26,7 @@ header {
   display: flex; justify-content: space-between; align-items: center;
 }
 .marka { color: var(--ikincil); font-size: 12px; letter-spacing: 1.5px; text-decoration: none; font-weight: 500; }
+.marka img { display: block; height: 44px; width: auto; }
 .dil { color: var(--vurgu); font-size: 15px; }
 main {
   max-width: 760px; margin: 16px auto 48px; padding: 24px 16px;
