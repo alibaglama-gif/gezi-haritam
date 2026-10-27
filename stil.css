@@ -48,3 +48,37 @@ table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0;
 th, td { border: 1px solid var(--cizgi); padding: 8px 10px; text-align: left; vertical-align: top; }
 th { color: var(--yazi); background: var(--zemin); font-weight: 600; }
 mark.eksik { background: var(--isaret); color: var(--yazi); padding: 0 3px; border-radius: 4px; }
+/* Ana sayfadaki mağaza düğmesi: ana eylem, kiremit dolu, dokunma alanı ≥44 px. */
+.magaza {
+  display: inline-block; min-height: 44px; padding: 10px 20px; margin-right: 8px;
+  background: var(--vurgu); color: var(--zemin); border-radius: 4px;
+  font-weight: 600; text-decoration: none;
+}
+.magaza:hover { filter: brightness(1.08); }
+.ikincil { color: var(--ikincil); font-size: 15px; white-space: nowrap; }
+
+/* Tanıtım (ana sayfa, tool/build_site.py tanitim()): geniş kart, ekran görüntüleri,
+   özellik kartları; telefonda 2×2 görsel, tek sütun kart. */
+.tanitim main, .tanitim header { max-width: 960px; }
+.ust-etiket { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ikincil); margin: 0 0 8px; }
+.giris h1 { font-size: 48px; margin: 0 0 12px; }
+.giris h1 em { color: var(--vurgu); font-style: italic; }
+.giris .lede { font-size: 19px; max-width: 34em; margin: 0 0 20px; }
+.giris .not { font-size: 15px; color: var(--ikincil); margin: 10px 0 0; }
+.yakinda { display: inline-block; padding: 10px 16px; border: 1px solid var(--cizgi); border-radius: 4px; color: var(--ikincil); font-size: 15px; }
+.ekranlar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 36px 0 8px; padding: 0; list-style: none; }
+.ekranlar li { margin: 0; }
+.ekranlar img { width: 100%; height: auto; display: block; border: 1px solid var(--kenar); border-radius: 4px; background: var(--zemin); }
+.ekranlar span { display: block; font-size: 13px; color: var(--ikincil); margin-top: 6px; text-align: center; }
+.ozellikler { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 8px 0 0; }
+.ozellik { border: 1px solid var(--kenar); border-radius: 4px; padding: 16px 20px; background: var(--zemin); }
+.ozellik h3 { margin: 0 0 6px; font-size: 24px; }
+.ozellik p { margin: 0; font-size: 16px; }
+.tanitim h2 { font-size: 32px; }
+.alt { max-width: 960px; margin: 0 auto 40px; padding: 0 16px; font-size: 15px; color: var(--ikincil); }
+.alt a { color: var(--ikincil); }
+@media (max-width: 700px) {
+  .giris h1 { font-size: 36px; }
+  .ekranlar { grid-template-columns: repeat(2, 1fr); }
+  .ozellikler { grid-template-columns: 1fr; }
+}
