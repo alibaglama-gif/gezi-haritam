@@ -55,6 +55,9 @@ mark.eksik { background: var(--isaret); color: var(--yazi); padding: 0 3px; bord
   font-weight: 600; text-decoration: none;
 }
 .magaza:hover { filter: brightness(1.08); }
+/* İki mağaza yan yana; dar ekranda alt alta (her düğmenin İngilizcesi yanında). */
+.magazalar { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.magaza-satir { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px 0; }
 .ikincil { color: var(--ikincil); font-size: 15px; white-space: nowrap; }
 
 /* Tanıtım (ana sayfa, tool/build_site.py tanitim()): geniş kart, ekran görüntüleri,
